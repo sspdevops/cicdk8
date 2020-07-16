@@ -1,0 +1,9 @@
+--- 
+- hosts: 172.31.81.158
+  become: yes
+  tasks:
+  - name: installing tree on "172.31.81.158"
+    apt:
+      name: tree
+      state: present
+      update_cache: yes
