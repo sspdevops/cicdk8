@@ -11,3 +11,4 @@ spec:
     name: accolite-container
     ports:
     - ContainerPort: 80
+      protcol: TCP
