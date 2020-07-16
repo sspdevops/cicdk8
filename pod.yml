@@ -1,0 +1,13 @@
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: accolite-pod
+  labels: 
+    app: nginx
+    env: dev 
+spec:
+  containers:
+  - image: 489064644984.dkr.ecr.us-east-1.amazonaws.com/cicdk8:1
+    name: accolite-container
+    ports:
+    - ContainerPort: 80
